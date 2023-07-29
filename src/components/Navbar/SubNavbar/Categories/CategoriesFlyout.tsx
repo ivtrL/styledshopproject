@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 
 import navigation from "./NavListCategory";
+import Image from "next/image";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -22,7 +23,7 @@ export default function CategoriesFlyout() {
                       open
                         ? "border-indigo-600 text-indigo-600"
                         : "border-transparent dark:text-gray-100 text-gray-700 dark:hover:text-gray-400 hover:text-gray-800",
-                      "relative -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
+                      "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                     )}
                   >
                     {category.name}
@@ -55,7 +56,9 @@ export default function CategoriesFlyout() {
                                 className="group relative text-base sm:text-sm"
                               >
                                 <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                  <img
+                                  <Image
+                                    width={item.width}
+                                    height={item.height}
                                     src={item.imageSrc}
                                     alt={item.imageAlt}
                                     className="object-cover object-center"

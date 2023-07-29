@@ -7,16 +7,18 @@ const navigation = {
         {
           name: "Novos em Estoque",
           href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+          width: 1280,
+          height: 1280,
+          imageSrc: "/mega-menu-category-01.jpg",
           imageAlt:
             "Modelos Novos em Estoque com fundo branco e sobreposição de texto preto e subtítulo azul claro.",
         },
         {
           name: "Básicos",
           href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg",
+          width: 1280,
+          height: 1280,
+          imageSrc: "/mega-menu-category-02.jpg",
           imageAlt:
             "Modelo de camiseta básica branca com sobreposição de texto preto e subtítulo azul claro.",
         },
@@ -69,16 +71,18 @@ const navigation = {
         {
           name: "Novos em Estoque",
           href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
+          width: 1720,
+          height: 960,
+          imageSrc: "/product-page-04-detail-product-shot-01.jpg",
           imageAlt:
             "Modelo de camiseta básica branca com sobreposição de texto preto e subtítulo azul claro.",
         },
         {
           name: "Artwork Tees",
           href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg",
+          width: 1280,
+          height: 1648,
+          imageSrc: "/category-page-02-image-card-06.jpg",
           imageAlt:
             "Modelo de camiseta básica branca com sobreposição de texto preto e subtítulo azul claro.",
         },
