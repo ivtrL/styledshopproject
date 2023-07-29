@@ -1,27 +1,25 @@
+import Image from "next/image";
 import Link from "next/link";
+
 import DarkModeToggle from "./ThemeButton/DarkModeToggle";
 import Searchbar from "./Searchbar/Searchbar";
-import MyAccountButton from "./MyAccount/MyAccountButton";
-import CartButton from "./Cart/CartButton";
+import SubNavbar from "./SubNavbar/SubNavbar";
 
 export default function Navbar() {
   return (
-    <header className="absolute items-center justify-center flex w-full h-24">
+    <header className="absolute flex flex-col w-full h-fit top-4 gap-2">
       {/* navbar */}
       <div className="w-4/5 h-4/5 m-auto flex justify-around items-center">
-        <h1 className="dark:text-white text-zinc-900">STYLED</h1>
-        <nav className="flex justify-around items-center">
-          <ul>
-            <li className="dark:text-white text-zinc-900">
-              <Link href="/">Início</Link>
-            </li>
-          </ul>
+        <Link href="/" className="flex items-center justify-center gap-2">
+          <Image src="/teste.png" alt="" width={32} height={32} />
+          <h1 className="dark:text-indigo-200 text-slate-800">STYLED</h1>
+        </Link>
+        <nav className="flex justify-around items-center gap-6">
           <Searchbar />
-          <MyAccountButton />
-          <CartButton />
         </nav>
         <DarkModeToggle />
       </div>
+      <SubNavbar />
     </header>
   );
 }
