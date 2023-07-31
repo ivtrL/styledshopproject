@@ -6,7 +6,7 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Switch } from "@headlessui/react";
 import { Switch as MUISwitch, styled } from "@mui/material";
 
-import { ThemeContext } from "../../DarkModeContext/ThemeProvider";
+import { ThemeContext } from "@/components/DarkModeContext/ThemeProvider";
 
 export default function DarkModeToggle() {
   const { toggle, mode } = useContext(ThemeContext);
