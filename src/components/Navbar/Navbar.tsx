@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import DarkModeToggle from "./ThemeButton/DarkModeToggle";
+import ThemeButton from "./ThemeButton";
 import Searchbar from "./Searchbar/Searchbar";
 import SubNavbar from "./SubNavbar/SubNavbar";
 
@@ -18,7 +18,7 @@ export default function Navbar() {
           <nav className="flex justify-around items-center gap-6">
             <Searchbar />
           </nav>
-          <DarkModeToggle />
+          <ThemeButton />
         </div>
         <SubNavbar />
       </div>

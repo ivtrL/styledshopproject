@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Navbar from "./Navbar/Navbar";
+import Link from "next/link";
+import { buttonVariants } from "./Button";
 
 export default function Header() {
   return (
@@ -98,12 +100,9 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <a
-                href="#"
-                className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white biv"
-              >
-                Olhar Coleção
-              </a>
+              <Link href="/#" className={buttonVariants()}>
+                Olhar coleção
+              </Link>
             </div>
           </div>
         </div>

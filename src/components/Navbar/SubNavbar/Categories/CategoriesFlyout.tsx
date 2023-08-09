@@ -2,7 +2,7 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 
-import navigation from "./NavListCategory";
+import navigation from "@lib/NavListCategory";
 import Image from "next/image";
 
 function classNames(...classes: string[]) {

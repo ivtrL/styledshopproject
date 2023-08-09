@@ -78,7 +78,7 @@ const navigation = {
             "Modelo de camiseta básica branca com sobreposição de texto preto e subtítulo azul claro.",
         },
         {
-          name: "Artwork Tees",
+          name: "Camisetas Artísticas",
           href: "#",
           width: 1280,
           height: 1648,
