@@ -93,7 +93,7 @@ export default function MyAccountButton() {
           <ListItemIcon>
             <LoginIcon fontSize="small" />
           </ListItemIcon>
-          <Link href="/account/login">Login/Register</Link>
+          <Link href="/login">Login/Register</Link>
         </MenuItem>
       </Menu>
     </>

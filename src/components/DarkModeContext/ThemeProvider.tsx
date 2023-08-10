@@ -14,7 +14,7 @@ export default function ThemeProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [mode, setMode] = useState<"light" | "dark">("dark");
+  const [mode, setMode] = useState<"light" | "dark">("light");
 
   const toggle = () => {
     setMode((prev) => (prev === "dark" ? "light" : "dark"));

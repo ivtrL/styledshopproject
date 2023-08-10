@@ -19,7 +19,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider>
           <div className="dark:bg-slate-950 w-screen h-screen transition-all duration-500">
-            <div className="absolute transition-all duration-500 dark:bg-gradient-radial bg-gradient-to-b dark:from-0% from-40% dark:from-violet-950 from-violet-400 via-70% dark:via-transparent via-transparent to-90% to-transparent w-full h-full top-[-50%]" />
             {children}
           </div>
         </ThemeProvider>

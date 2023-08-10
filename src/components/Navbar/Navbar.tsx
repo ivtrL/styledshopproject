@@ -7,7 +7,7 @@ import SubNavbar from "./SubNavbar/SubNavbar";
 
 export default function Navbar() {
   return (
-    <div className="relative z-10 w-full h-fit dark:bg-black bg-white dark:bg-opacity-50 bg-opacity-50 backdrop-blur-xl dark:backdrop-brightness-150 backdrop-brightness-90 backdrop-filter transition-all duration-500">
+    <div className="relative z-10 w-full h-fit dark:bg-black/50 bg-white/50 backdrop-blur-xl dark:backdrop-brightness-150 backdrop-brightness-90 backdrop-filter transition-all duration-500">
       {/* navbar */}
       <div className="pt-2 gap-2 h-full px-8 flex flex-col">
         <div className="flex justify-around items-center w-full">
