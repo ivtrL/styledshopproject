@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 
-const Form = () => {
+const LoginForm = () => {
   return (
     <div className="mt-10 dark:bg-slate-800 bg-gray-100 sm:mx-auto sm:w-full sm:max-w-md flex flex-col shadow-xl dark:shadow-none p-6 rounded-xl">
       <form action="#" method="POST">
@@ -46,4 +45,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default LoginForm;

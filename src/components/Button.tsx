@@ -8,13 +8,20 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-slate-900 text-white hover:bg-slate-700 dark:hover:bg-indigo-900 dark:bg-indigo-500 dark:text-slate-900",
+          "bg-slate-900 text-white dark:hover:bg-indigo-900 hover:bg-slate-700 dark:bg-indigo-500 dark:text-slate-900",
+        destructive:
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "bg-transparent border border-slate-200 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-100",
+          "border border-input hover:bg-accent hover:text-accent-foreground",
+        secondary:
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        ghost: "hover:bg-accent hover:text-accent-foreground",
+        link: "underline-offset-4 hover:underline text-primary",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-8 px-2 rounded-md",
+        lg: "h-11 px-8 rounded-md",
       },
     },
     defaultVariants: {
@@ -40,5 +47,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
     />
   );
 });
+Button.displayName = "Button";
 
 export { Button, buttonVariants };

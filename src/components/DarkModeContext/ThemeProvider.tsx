@@ -1,27 +1,15 @@
 "use client";
 
-import { createContext, useState } from "react";
-
-type ThemeContextProps = {
-  mode?: "light" | "dark";
-  toggle?: () => void;
-};
-
-export const ThemeContext = createContext<ThemeContextProps>({});
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { ThemeProviderProps } from "next-themes/dist/types";
 
 export default function ThemeProvider({
   children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [mode, setMode] = useState<"light" | "dark">("light");
-
-  const toggle = () => {
-    setMode((prev) => (prev === "dark" ? "light" : "dark"));
-  };
+  ...props
+}: ThemeProviderProps) {
   return (
-    <ThemeContext.Provider value={{ toggle, mode }}>
-      <div className={`${mode}`}>{children}</div>
-    </ThemeContext.Provider>
+    <NextThemesProvider attribute="class" {...props}>
+      {children}
+    </NextThemesProvider>
   );
 }

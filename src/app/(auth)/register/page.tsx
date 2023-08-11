@@ -1,4 +1,4 @@
-import Form from "@src/components/Form";
+import Form from "@src/components/RegisterForm";
 
 import Image from "next/image";
 
