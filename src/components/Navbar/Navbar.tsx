@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import ThemeButton from "./ThemeButton";
+import ThemeButton from "../DarkMode/ThemeButton";
 import Searchbar from "./Searchbar/Searchbar";
 import SubNavbar from "./SubNavbar/SubNavbar";
 
