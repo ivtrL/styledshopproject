@@ -66,7 +66,7 @@ const RegisterForm = () => {
           <input
             id="confirm_password"
             name="confirm_password"
-            type="confirm_password"
+            type="password"
             placeholder="Confirmar Senha"
             autoComplete="confirm_password"
             required
